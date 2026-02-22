@@ -14,7 +14,6 @@ class WildlifeDatabase:
 
             for row in reader:
                 try:
-                    # Skip rows without coordinates
                     if not row["decimalLatitude"] or not row["decimalLongitude"]:
                         continue
 
